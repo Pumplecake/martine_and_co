@@ -10,16 +10,11 @@
         <meta name="description" content="Martine & co, chocolat marcolini, frères mariage, olives & co, en bergerue 18, 4000 Liège" />
         <meta name="keywords" content="Martine & co, chocolat marcolini, frères mariage, olives & co"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<!-- Ligne du dessus à modifier (icône à changer) -->
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -29,7 +24,10 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">Votre navigateur internet est <strong>obsolète</strong>. Nous vous conseillons de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> pour améliorer votre expérience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+    <div id="navbar-spacer" class="visible-xs"></div>
+
+    <nav class="navbar navbar-default navbar-fixed-top visible-xs" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,44 +36,44 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
-
-	  <!-- Changer la police, il faut qu'elle soit comme celle du site original -->
-          <a class="navbar-brand" href="#">Martine & co</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
 
-
-
-		<!-- Nous sommes dans la barre de navigation. Idée: y mettre les réseaux sociaux et un formulaire de contact. On peut aussi mettre un bandeau en dessous de la page pour la navigation mobile. Voir comment combiner ces deux affichages (inspiration de qz.com). 
-
-  Mettre un défilé horizontal de photos, la première étant toujours Martine & co.
-
--->
-
-
-
-
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
+	<div id="navbar" class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="#">Présentation</a></li>
+			<li><a href="#">Produits</a></li>
+			<li><a href="#">Nouveautés</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Plan</a></li>
+			<li><a href="#">Carte des Thés</a></li>
+		</ul>
+        </div>
       </div>
     </nav>
 
-    <!-- <div>
-    Pour que la description du magasin soit adaptée au mobile, mettre une image clickable dirigeant vers la présentation/affichant un menu déroulant.
-  On peut envisager de faire un défilé horizontal de photos qui pointe vers la présentation + horaire du magasin.
+    <div class="container">
+    	<div class="row">
+	  <img class="img-rounded center-block" src="Figures/martineandco-top-banner.jpg" alt="Martine & Co à Liège">
+	</div>
+    </div>
+
+    <nav class="navbar navbar-inverse hidden-xs" role="navigation">
+      <div class="container">
+	<div class="row">
+		<ul class="nav navbar-nav">
+			<li><a href="#">Présentation</a></li>
+			<li><a href="#">Produits</a></li>
+			<li><a href="#">Nouveautés</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Plan</a></li>
+			<li><a href="#">Carte des Thés</a></li>
+		</ul>
+        </div>
+      </div>
+    </nav>
 
 
-  To do: faire une carte des différents liens du site, pour savoir ce qui pointe vers quoi.
-    </div> -->
+
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">

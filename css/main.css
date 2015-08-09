@@ -4,16 +4,30 @@
    Author's custom styles
    ========================================================================== */
 
+body {
+	padding-top: 0;
+	background-image: url("../Figures/body-background.jpg");
+}
+
+#navbar-spacer {
+	padding-top: 50px;
+}
 
 
 
+/* ==========================================================================
+   Bootstrap modifications 
+   ========================================================================== */
 
+.row > .navbar-nav {
+	width: 100%;
+	text-align: center;
+}
 
-
-
-
-
-
+.row > .navbar-nav > li {
+	float: none;
+	display: inline-block;
+}
 
 
 
